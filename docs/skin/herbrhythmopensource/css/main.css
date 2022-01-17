@@ -43,7 +43,7 @@ table {
 }
 
 @media screen and (min-width: 1400px) {
-	body{background: #dddddd;}
+	body{background: #dddddd;font-size:18px;font-size: 1.3em;}
 	menu{height:40px;width: 100%;position: absolute;z-index:1;width:100%;vertical-align: middle;}
 	menu img{width:20px;height: 20px;padding:10px}
 	menu h1{display: flex;height: 40px;line-height: 40px;font-weight: bold;font-size: 18px;}
@@ -64,7 +64,9 @@ table {
 	about{background: #118AB2;display: block;color:white}
 	about content{height: 640px;width: 1200px;padding-top:60px;margin:0 auto;background: no-repeat right bottom url(../image/panda.webp);}
 	about h2{font-size: 46px;line-height: 50px;font-weight: bold;}
-
+	about desc{font-size:20px;line-height: 1.5em;}
+	about desc ul{list-style-type: disc;;padding-left: 1em;margin:0.5em 0;}
+	about desc a{color:white;text-decoration: underline;}
 	projects{display: block;color: #333333;}
 	projects content{padding:60px 0;}
 	projects h2{font-size: 50px;line-height: 50px;font-weight: bold;text-align: center;margin-bottom: 60px;}
