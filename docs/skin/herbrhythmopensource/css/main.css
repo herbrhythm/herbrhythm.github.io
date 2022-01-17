@@ -1,0 +1,88 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@media screen and (min-width: 1400px) {
+	body{background: #dddddd;}
+	menu{height:40px;width: 100%;position: absolute;z-index:1;width:100%;vertical-align: middle;}
+	menu img{width:20px;height: 20px;padding:10px}
+	menu h1{display: flex;height: 40px;line-height: 40px;font-weight: bold;font-size: 18px;}
+	#logo{text-decoration: none;position: absolute;left:10px;top:0}
+	logo1{color:#333333}
+	logo2{color:#EF476F}
+	nav{position: absolute;right:10px;top:0;width:160px;height: 40px;display: flex;}
+	nav a{display: block;width:80px;font-size:18px;line-height: 40px; height: 40px;text-align: right;text-decoration: none;color:#118AB2}
+	nav a:hover{text-decoration: underline;}
+
+	home{display:block;height:800px;position: relative;background: white;}
+	home::before{background: no-repeat center center url(../image/flame-809.png);position: absolute;width:100%;height:100%;content:"";opacity: 0.1;}
+	slogon1,slogon2{height:100px;line-height:100px;width:800px;position: absolute;left:50%;margin-left:-450px;top:50%;font-size: 80px;font-weight: bold;text-align: center;}
+	slogon1{margin-top:-60px;color:#333333}
+	slogon2{margin-top:60px;color:#EF476F}
+	content {display: block}
+
+	about{background: #118AB2;display: block;color:white}
+	about content{height: 640px;width: 1200px;padding-top:60px;margin:0 auto;background: no-repeat right bottom url(../image/panda.webp);}
+	about h2{font-size: 46px;line-height: 50px;font-weight: bold;}
+
+	projects{display: block;color: #333333;}
+	projects content{padding:60px 0;}
+	projects h2{font-size: 50px;line-height: 50px;font-weight: bold;text-align: center;margin-bottom: 60px;}
+	project{display:block;width: 620px;height:260px;margin: 32px auto;padding: 20px 20px  20px 320px;position: relative;background: white;}
+
+	project::before{content: "其他";height:20px;line-height: 20px;font-size: 18px;padding:260px 20px 20px 0;color:white;background: no-repeat center center #06D6A0 url(../image/code.png);display: block;width:280px;position: absolute;left:0;top:0;text-align: right;}
+	project.server::before{content: "服务程序";background-image: url(../image/server.png);display: block}
+	project:hover{ box-shadow: 0px 2px 4px rgba(100,100,100,0.5)}
+	project name{display: block;font-size: 30px;line-height: 40px;font-weight: bold;}
+	project desc{line-height: 1.3em;font-size: 18px;color:#333333;}
+	project desc ul{list-style-type: disc;;padding-left: 1em;margin:0.5em 0;}
+	project buttons{position: absolute;right:20px;bottom:20px;display: block;width:auto;height:auto;display: flex;}
+	project buttons a{display: block;width:128px;height: 38px;margin-left: 20px;line-height: 38px;color:#118AB2;text-decoration: none;border: #118AB2 1px solid;text-align: center;}
+	project buttons a:hover{background-color: #eeeeee}
+
+	footer{display:block;width: 100%;height: 40px;background: #333333;}
+	footer content{display:block;height:40px;line-height: 40px;font-size: 14px;color:#eeeeee;text-align: center;}
+	footer a{text-decoration: none}
+	footer a:hover{text-decoration: underline;}
+	footer a.home{color:#06D6A0}
+}
