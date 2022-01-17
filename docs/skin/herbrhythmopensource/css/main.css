@@ -140,7 +140,7 @@ table {
 }
 
 @media screen and (max-width:959px) {
-	body{min-width: 640px;background: #eeeeee;}
+	body{min-width: 640px;background: #eeeeee;position: relative;}
 	menu{height:40px;width: 100%;position: absolute;z-index:1;width:100%;vertical-align: middle;}
 	menu img{width:32px;height: 32px;padding:4px}
 	menu h1{display: flex;height: 40px;line-height: 40px;font-weight: bold;font-size: 32px;}
