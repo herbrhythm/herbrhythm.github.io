@@ -43,7 +43,7 @@ table {
 }
 
 @media screen and (min-width: 1400px) {
-	body{background: #dddddd;font-size:18px;font-size: 1.3em;}
+	body{background: #dddddd;font-size:18px;line-height: 1.3em;max-width: 2560px;margin:0 auto}
 	menu{height:40px;width: 100%;position: absolute;z-index:1;width:100%;vertical-align: middle;}
 	menu img{width:20px;height: 20px;padding:10px}
 	menu h1{display: flex;height: 40px;line-height: 40px;font-weight: bold;font-size: 18px;}
@@ -56,17 +56,18 @@ table {
 
 	home{display:block;height:800px;position: relative;background: white;}
 	home::before{background: no-repeat center center url(../image/flame-809.png);position: absolute;width:100%;height:100%;content:"";opacity: 0.1;}
-	slogon1,slogon2{height:100px;line-height:100px;width:800px;position: absolute;left:50%;margin-left:-450px;top:50%;font-size: 80px;font-weight: bold;text-align: center;}
+	slogon1,slogon2{height:100px;line-height:100px;width:800px;position: absolute;left:50%;margin-left:-400px;top:50%;font-size: 80px;font-weight: bold;text-align: center;}
 	slogon1{margin-top:-60px;color:#333333}
 	slogon2{margin-top:60px;color:#EF476F}
 	content {display: block}
 
 	about{background: #118AB2;display: block;color:white}
-	about content{height: 640px;width: 1200px;padding-top:60px;margin:0 auto;background: no-repeat right bottom url(../image/panda.webp);}
+	about content{height: 540px;width: 1200px;padding-top:60px;margin:0 auto;background: no-repeat right bottom url(../image/panda.webp);}
 	about h2{font-size: 46px;line-height: 50px;font-weight: bold;}
 	about desc{font-size:20px;line-height: 1.5em;}
 	about desc ul{list-style-type: disc;;padding-left: 1em;margin:0.5em 0;}
 	about desc a{color:white;text-decoration: underline;}
+
 	projects{display: block;color: #333333;}
 	projects content{padding:60px 0;}
 	projects h2{font-size: 50px;line-height: 50px;font-weight: bold;text-align: center;margin-bottom: 60px;}
@@ -83,8 +84,101 @@ table {
 	project buttons a:hover{background-color: #eeeeee}
 
 	footer{display:block;width: 100%;height: 40px;background: #333333;}
-	footer content{display:block;height:40px;line-height: 40px;font-size: 14px;color:#eeeeee;text-align: center;}
+	footer content{display:block;height:40px;line-height: 40px;font-size: 18px;color:#eeeeee;text-align: center;}
 	footer a{text-decoration: none}
 	footer a:hover{text-decoration: underline;}
 	footer a.home{color:#06D6A0}
+}
+
+@media screen and (min-width: 960px )and (max-width:1399px) {
+	body{background: #dddddd;font-size:16px;line-height: 1.3em;margin:0 auto}
+	menu{height:40px;width: 100%;position: absolute;z-index:1;width:100%;vertical-align: middle;}
+	menu img{width:20px;height: 20px;padding:10px}
+	menu h1{display: flex;height: 40px;line-height: 40px;font-weight: bold;font-size: 18px;}
+	#logo{text-decoration: none;position: absolute;left:10px;top:0}
+	logo1{color:#333333}
+	logo2{color:#EF476F}
+	nav{position: absolute;right:10px;top:0;width:160px;height: 40px;display: flex;}
+	nav a{display: block;width:80px;font-size:18px;line-height: 40px; height: 40px;text-align: right;text-decoration: none;color:#118AB2}
+	nav a:hover{text-decoration: underline;}
+
+	home{display:block;height:600px;position: relative;background: white;}
+	home::before{background: no-repeat center center url(../image/flame-809.png);position: absolute;width:100%;height:100%;content:"";opacity: 0.1;}
+	slogon1,slogon2{height:90px;line-height:90px;width:800px;position: absolute;left:50%;margin-left:-400px;top:50%;font-size: 72px;font-weight: bold;text-align: center;}
+	slogon1{margin-top:-50px;color:#333333}
+	slogon2{margin-top:50px;color:#EF476F}
+	content {display: block}
+
+	about{background: #118AB2;display: block;color:white}
+	about content{height: 490px;width: 800px;padding-top:60px;margin:0 auto;background: no-repeat right bottom url(../image/panda.webp);}
+	about h2{font-size: 36px;line-height: 44px;font-weight: bold;}
+	about desc{font-size:18px;line-height: 1.5em;}
+	about desc ul{list-style-type: disc;;padding-left: 1em;margin:0.5em 0;}
+	about desc a{color:white;text-decoration: underline;}	
+
+	projects{display: block;color: #333333;}
+	projects content{padding:50px 0;}
+	projects h2{font-size: 36px;line-height: 44px;font-weight: bold;text-align: center;margin-bottom: 50px;}
+
+	project{display:block;width: 530px;height:230px;margin: 32px auto;padding: 10px 10px  10px 260px;position: relative;background: white;}
+	project::before{content: "其他";height:20px;line-height: 20px;font-size: 16px;width:240px;padding:220px 10px 10px 0;color:white;background: no-repeat center center #06D6A0 url(../image/code.png);display: block;position: absolute;left:0;top:0;text-align: right;}
+	project.server::before{content: "服务程序";background-image: url(../image/server.png);display: block}
+	project:hover{ box-shadow: 0px 2px 4px rgba(100,100,100,0.5)}
+	project name{display: block;font-size: 24px;line-height: 32px;font-weight: bold;}
+	project desc{line-height: 1.3em;font-size: 14px;color:#333333;}
+	project desc ul{list-style-type: disc;;padding-left: 1em;margin:0.5em 0;}
+	project buttons{position: absolute;right:10px;bottom:10px;display: block;width:auto;height:auto;display: flex;}
+	project buttons a{font-size:16px;display: block;width:98px;height: 28px;margin-left: 10px;line-height: 28px;color:#118AB2;text-decoration: none;border: #118AB2 1px solid;text-align: center;}
+	project buttons a:hover{background-color: #eeeeee}	
+
+	footer{display:block;width: 100%;height: 30px;background: #333333;}
+	footer content{display:block;height:30px;line-height: 30px;font-size: 14px;color:#eeeeee;text-align: center;}
+	footer a{text-decoration: none}
+	footer a:hover{text-decoration: underline;}
+	footer a.home{color:#06D6A0}
+
+}
+
+@media screen and (max-width:959px) {
+	body{min-width: 640px;background: #eeeeee;}
+	menu{height:40px;width: 100%;position: absolute;z-index:1;width:100%;vertical-align: middle;}
+	menu img{width:32px;height: 32px;padding:4px}
+	menu h1{display: flex;height: 40px;line-height: 40px;font-weight: bold;font-size: 32px;}
+	#logo{text-decoration: none;display: block;display: flex;justify-content: center;}
+	logo1{color:#333333}
+	logo2{color:#EF476F}
+	nav{display: none;}
+
+	home{display:block;height:100vh;position: relative;background: white;}
+	home::before{background: no-repeat center center url(../image/flame-809.png);position: absolute;width:100%;height:100%;content:"";opacity: 0.1;}
+	slogon1,slogon2{height:90px;line-height:80px;width:600px;position: absolute;left:50%;margin-left:-300px;top:50%;font-size: 64px;font-weight: bold;text-align: center;}
+	slogon1{margin-top:-40px;color:#333333}
+	slogon2{margin-top:40px;color:#EF476F}
+	content {display: block}
+
+	about{background: #118AB2;display: block;color:white}
+	about content{height: 580px;width: auto;padding:30px 30px;margin:0 auto;background: no-repeat right bottom url(../image/panda.webp);}
+	about h2{font-size: 32px;line-height: 40px;font-weight: bold;margin-bottom: 20px;}
+	about desc{font-size:24px;line-height: 1.3em;}
+	about desc ul{list-style-type: disc;;padding-left: 1em;margin:0.5em 0;}
+	about desc a{color:white;text-decoration: underline;}	
+
+	projects{display: block;color: #333333;}
+	projects content{padding:40px 0;}
+	projects h2{font-size: 32px;line-height: 40px;font-weight: bold;text-align: center;margin-bottom: 50px;}
+
+	project{display:block;width: auto;height:280px;margin: 32px auto;padding: 	10px 10px  10px 40px;position: relative;background: white;}
+	project::before{background: #06D6A0;position: absolute;content: "";width:30px;z-index: 1;height: 100%;left:0;top:0}
+	project name{display: block;font-size: 36px;line-height: 50px;font-weight: bold;}
+	project desc{line-height: 1.3em;font-size: 20px;color:#333333;}
+	project desc ul{list-style-type: disc;;padding-left: 1em;margin:0.5em 0;}
+	project buttons{position: absolute;right:10px;bottom:10px;display: block;width:auto;height:auto;display: flex;}
+	project buttons a{font-size:20px;display: block;width:128px;height: 38px;margin-left: 20px;line-height: 38px;color:#118AB2;text-decoration: none;border: #118AB2 1px solid;text-align: center;}
+
+	footer{display:block;width: 100%;height: 40px;background: #333333;}
+	footer content{display:block;height:40px;line-height: 40px;font-size: 24px;color:#eeeeee;text-align: center;}
+	footer a{text-decoration: none}
+	footer a:hover{text-decoration: underline;}
+	footer a.home{color:#06D6A0}
+
 }
